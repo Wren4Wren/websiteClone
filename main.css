@@ -74,7 +74,7 @@ nav input:focus + .nav-vis{
 
 nav img{
     scale: auto;
-    height: 2.5pc;
+    height: 42px;
 }
 
 nav div ul{
@@ -117,6 +117,10 @@ header h2{
     margin: 10px;
     text-align: center !important;
 }
+/* #search {
+    display: flex;
+justify-content: space-between;
+} */
 
 /* Search to button design and extras*/
 #search2 {
@@ -149,7 +153,8 @@ form.example input[type="text"]{
     background: #ffffff;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    border-right: 1px #04AA6D;
+    border-right: 0;
+    border-right: 1px #04AA6D !important;
     outline: 0;
 }
 
@@ -157,16 +162,16 @@ form.example {
     position: relative;
     margin: auto;
     max-width: 500px;
+    display: flex;
+    
 }
-.fa {display: inline-block;
-    /* text-rendering: auto; */
+/* changes the way the icon is displayed on webpage */
+.fa {
+    display: inline-block;
     transform: translate(0,0);
     font-size: 20px;
 }
 
-#search3 {
-    display: flex;
-}
 form.example button {
     border-radius: 25px;
     color: #ffffff;
@@ -179,25 +184,36 @@ form.example button {
     cursor: pointer;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    margin: 0;
 }
 
 
+#divide img {
+    width: 100%;
+}
+
 .where-to-begin {
-    font-family: 'Source San Pro', sans-serif;
+    font-family: inherit;
     font-weight: 700;
     font-size: 23px;
     text-decoration: underline;
     color: inherit;
     background-color: transparent;
-    margin: 10px;
-    text-align: center !important;
+    margin-top: 30px !important;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
 }
-.html{
-    margin-top: -10px;
-    margin-left: auto;
-    margin-right: auto;
-    display:flex;
-    flex-direction: row;
+
+.html {
+    margin-top: -18px !important;
     background-color: #d9eee1;
-    padding: 0;
+    padding: 3%;
+    display:flex;
+    justify-content: center;
+}
+
+.html h4{
+    margin: 2px 0 -20px 0 !important;
+    font-size: 100px;
 }
